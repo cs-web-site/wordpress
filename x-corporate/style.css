@@ -1872,6 +1872,8 @@ a.cart-contents {
 
 .custom-logo-link img {
 	margin: 16px 0 0px 40px;
+	/* img width for TUT */
+	width: 215px;
 }
 
 .site-title {
@@ -2311,6 +2313,7 @@ a.cart-contents {
 	line-height: 1.2;
 	font-family: 'Hiragino Mincho ProN';
 	margin-top: 64px;
+	text-shadow: 2px 2px 2px black;
 }
 
 /*==========================================================

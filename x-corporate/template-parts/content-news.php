@@ -3,12 +3,22 @@ NEWS 最新情報
 使用例
 wp-content/themes/x-corporate/includes/module/hero.php:123
 -------------------------------->
+<?php
+/** 投稿カテゴリーのスラッグが[news]のものを3件取得 */
+$posts = get_posts(array(
+    'posts_per_page' => 3, // 表示件数
+    'category_name' => 'news' // カテゴリIDもしくはスラッグ名
+));
+?>
 
 <li class="hero-news__item">
     <p>
+        <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
         <span>
-            <?php if ( 'post' === get_post_type() ) x_corporate_posted_on(); ?>
+            <?php the_time('Y.m.d'); ?>
+            <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            <br/>
         </span>
-        <?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
+        <?php endforeach; endif; ?>
     </p>
 </li>
