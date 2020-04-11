@@ -2313,6 +2313,7 @@ a.cart-contents {
 	line-height: 1.2;
 	font-family: 'Hiragino Mincho ProN';
 	margin-top: 64px;
+	text-shadow: 2px 2px 2px black;
 }
 
 /*==========================================================
