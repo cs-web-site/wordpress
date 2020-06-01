@@ -119,7 +119,7 @@ if ( ! function_exists( 'x_corporate_render_hero_banner' ) ) :
 				<div class="hero-container">
 					<div class="hero-container__title">
 						<p>NEWS -最新情報-</p>
-						<span>ニュース一覧</span>
+						<a href="#">ニュース一覧</a>
 					</div>
 					<div>
 						<ul class="hero-news">

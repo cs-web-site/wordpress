@@ -2345,7 +2345,7 @@ a.cart-contents {
 	color: #4B5A8E;
 }
 
-.hero-container__title > span {
+.hero-container__title > a{
 	font-size: 12px;
 	padding: 4px 8px;
 	color: #fff;
