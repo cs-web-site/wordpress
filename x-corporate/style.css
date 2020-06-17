@@ -2042,13 +2042,25 @@ a.cart-contents {
 	object-fit: cover;
 }
 
-.custom-header-wrapper {
+/* TODO@: あとで影響範囲を確認したら消す */
+/* .custom-header-wrapper {
 	position: relative;
 	z-index: 9;
 	overflow: hidden;
-}
+} */
 
 .custom-header-wrapper .page-title {
+	position: absolute;
+	bottom: 70px;
+	left: 70px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 45px;
+}
+
+/* TODO@: あとで影響範囲を確認したら消す */
+/* .custom-header-wrapper .page-title {
 	color: #222;
 	font-size: 33px;
 	float: left;
@@ -2056,11 +2068,13 @@ a.cart-contents {
 	border-left: 4px solid #de2828;
 	padding-left: 20px;
 	line-height: 1.2;
-}
+} */
+
 #breadcrumb {
-	float: right;
-	margin-top: 5px;
+	display: block;
+	padding: 0 48px;
 }
+
 #custom-header img {
 	vertical-align: middle;
 }

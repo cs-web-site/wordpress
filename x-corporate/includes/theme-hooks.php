@@ -377,12 +377,10 @@ if ( ! function_exists( 'x_corporate_add_custom_header' ) ) :
 			do_action( 'x_corporate_single_image' );
 			?>
 			<div class="custom-header-wrapper">
-				<div class="container">
 					<?php do_action( 'x_corporate_action_custom_header_title' ); ?>
-				<?php do_action( 'x_corporate_add_breadcrumb' ); ?>
-				</div><!-- .container -->
-			</div><!-- .custom-header-content -->
-		</div><!-- #custom-header -->
+			</div>
+		</div>
+		<?php do_action( 'x_corporate_add_breadcrumb' ); ?>
 		<?php
 	}
 
