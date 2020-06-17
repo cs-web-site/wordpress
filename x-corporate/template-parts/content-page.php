@@ -8,16 +8,7 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php
-	/**
-	 * Hook - x_corporate_single_image.
-	 *
-	 * @hooked x_corporate_add_image_in_single_display - 10
-	 */
-	do_action( 'x_corporate_single_image' );
-	?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>

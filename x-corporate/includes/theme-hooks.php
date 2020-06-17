@@ -368,6 +368,14 @@ if ( ! function_exists( 'x_corporate_add_custom_header' ) ) :
 		}
 		?>
 		<div id="custom-header">
+			<?php
+			/**
+			 * Hook - x_corporate_single_image.
+			 *
+			 * @hooked x_corporate_add_image_in_single_display - 10
+			 */
+			do_action( 'x_corporate_single_image' );
+			?>
 			<div class="custom-header-wrapper">
 				<div class="container">
 					<?php do_action( 'x_corporate_action_custom_header_title' ); ?>
