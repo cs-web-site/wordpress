@@ -123,9 +123,7 @@ if ( ! function_exists( 'x_corporate_render_hero_banner' ) ) :
 					</div>
 					<div>
 						<ul class="hero-news">
-							<?php $i = 0; while ( have_posts() && $i < 3 ) : the_post(); ?>
-								<?php get_template_part('template-parts/content-news', 'none'); $i++?>
-							<?php endwhile; ?>
+							<?php get_template_part('template-parts/content-news', 'none');?>
 						</ul>
 					</div>
 				</div>
