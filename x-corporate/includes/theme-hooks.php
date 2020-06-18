@@ -378,6 +378,7 @@ if ( ! function_exists( 'x_corporate_add_custom_header' ) ) :
 			?>
 			<div class="custom-header-wrapper">
 					<?php do_action( 'x_corporate_action_custom_header_title' ); ?>
+					<?php the_subtitle(); ?>
 			</div>
 		</div>
 		<?php do_action( 'x_corporate_add_breadcrumb' ); ?>
